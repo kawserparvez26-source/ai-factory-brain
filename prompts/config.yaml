@@ -1,0 +1,7 @@
+version: "1.0.0"
+description: "Prompts Module Configuration - Phase 1 Placeholder"
+
+# TODO
+# - [ ] Define prompt templates (Phase 2)
+# - [ ] Configure versioning system (Phase 2)
+# - [ ] Setup template paths (Phase 2)

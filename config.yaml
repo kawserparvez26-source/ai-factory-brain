@@ -1,0 +1,7 @@
+version: "1.0.0"
+description: "AI Factory Brain MVP Phase 1 Configuration - Placeholder for Phase 1"
+
+# TODO
+# - [ ] Define reasoning parameters (Phase 2)
+# - [ ] Configure memory settings (Phase 2)
+# - [ ] Setup knowledge indexing (Phase 2)
