@@ -228,7 +228,7 @@ class ExecutionTask:
     schema_version: ClassVar[str] = "1.0"
 
     task_id: str = field(default_factory=lambda: str(uuid4()))
-    chain_id: str = field(default="")
+    chain_id: str = field(default_factory=str)
     parent_task_id: Optional[str] = None
     child_task_ids: List[str] = field(default_factory=list)
     dependency_task_ids: List[str] = field(default_factory=list)  # Enhancement 1
@@ -279,7 +279,7 @@ class ExecutionResult:
     schema_version: ClassVar[str] = "1.0"
 
     result_id: str = field(default_factory=lambda: str(uuid4()))
-    task_id: str = field(default="")
+    task_id: str = field(default_factory=str)
     status: str = ResultStatus.SUCCESS.value
     duration_ms: Optional[int] = None
     output: Dict[str, Any] = field(default_factory=dict)
